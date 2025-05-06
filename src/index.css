@@ -1,0 +1,181 @@
+body {
+  height: 100%;
+  margin: 0;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 1.2rem;
+}
+
+.ol-zoom {
+  margin-top: 5px;
+  margin-left: 10px;
+}
+
+.ol-rotate {
+  visibility: hidden;
+}
+
+.data-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 16px;
+}
+
+.data-row .label {
+  font-size: 14px;
+  width: 150px;
+}
+
+.data-row .value {
+  font-size: 14px;
+  padding-right: 6px;
+}
+
+.data-row .input {
+  width: 40px;
+  height: 24px;
+  text-align: right;
+  background-color: #333;
+  color: #fff;
+  border-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 1px;
+  padding-right: 5px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.data-row .input:invalid {
+  border: 1px solid red;
+  background-color: #900;
+}
+
+#main-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#map-container {
+  width: 100%;
+  height: 800px;
+  margin: 0;
+}
+
+#map {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+#controls {
+  position: fixed;
+  top: 5px;
+  right: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+
+#controls button {
+  margin: 2px;
+}
+
+#info {
+  position: absolute;
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  border-radius: 4px;
+  padding: 10px;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 10;
+}
+
+#hospital-info {
+  background-color: rgba(250,250,250,.8);
+  color: #333;
+  font-size: 10px;
+  padding: 0 3px;
+  border-radius: 2px;
+  visibility: hidden;
+}
+
+#overlay {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 150px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background-color: rgba(250,250,250,.6);
+  color: #333;
+  font-size: 10px;
+  margin: 10px;
+  padding: 5px;
+  border-radius: 10px;
+}
+
+#overlay p {
+  margin: 2px;
+}
+
+#panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 300px;
+  height: 800px;
+  background-color: #333;
+  color: #fff;
+}
+
+#inner-panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 10px;
+  padding: 12px 0;
+  width: 100%;
+}
+
+#month-select {
+  font-size: 14px;
+  background-color: #333;
+  color: #fff;
+  margin: 20px;
+  padding: 5px;
+  width: 120px;
+  border-style: solid;
+  appearance: none;
+}
+
+#data-table {
+  display: flex;
+  flex-direction: column;
+  width: 80%
+}
+
+#panel-buttons {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-self: flex-end;
+  margin-right: 30px;
+  width: 80px;
+}
+
+#edit-fields {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#save-data {
+  color: #333;
+}
